@@ -1,3 +1,5 @@
+/* General styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -11,49 +13,46 @@
     height: 98vh;
     position: relative;
 }
-header
-{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
 }
 
-.logo
-{
+.logo {
     margin-left: 80px;
     width: 100px;
 }
-ul{
+ul {
     margin-right: 50px;
 }
-.list-items{
+.list-items {
     list-style: none;
     display: inline;
     margin: 0px 20px;
 }
-.links{
+.links {
     text-decoration: none;
     color: #F2613F;
     font-weight: 600;
 }
-.links:hover{
+.links:hover {
     color: #481E14;
 }
-
-#bgimg{
+#bgimg {
     width: 100%;
 }
-.about-container{
+.about-container {
     width: 100%;
     height: 100vh;
-    margin-top: -2rem;
+    margin-top: 1rem;
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
 }
-.about{
+.about {
     width: 50%;
     height: 50%;
     padding-right: 5rem;
@@ -61,22 +60,20 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    text-align: end ;
+    text-align: end;
 }
-
-.about h2{
+.about h2 {
     font-size: 2rem;
     font-family: "Sixtyfour Convergence", sans-serif;
     margin-bottom: 20px;
 }
-
-.about p{
+.about p {
     line-height: 1.5;
     font-size: 20px;
     padding-left: 15rem;
 }
-.about a{
-    margin:1.5rem 0 0 0;
+.about a {
+    margin: 1.5rem 0 0 0;
     padding: 10px;
     text-decoration: none;
     color: #0C0C0C;
@@ -84,33 +81,31 @@ ul{
     border-radius: 15px;
     background-color: #9B3922;
 }
-.about a:hover{
+.about a:hover {
     background-color: #F2613F;
     color: #0C0C0C;
 }
-.about-img img{
+.about-img img {
     padding-left: 10rem;
     width: 80%;
 }
 .image-grid {
     padding: 0 32vh;
-    background-color: #0C0C0C;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-gap: 10px; /* Adjust spacing as needed */
-  }
-  
-  .image-grid img {
+    grid-gap: 10px;
+}
+.image-grid img {
     width: 100%;
     height: auto;
     padding: 0.3rem;
-  }
-    .image-grid img:hover{
-        opacity: 0.5;
-        transform: scale(1.1);
-    }
-.for-and-about{
+}
+.image-grid img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.for-and-about {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -118,30 +113,30 @@ ul{
     padding: 0 10rem;
     margin-top: 5rem;
 }
-.for-and-about h2{
+.for-and-about h2 {
     font-size: 2rem;
     font-family: "Sixtyfour Convergence", sans-serif;
     margin-bottom: 20px;
     margin-left: 8.5rem;
 }
-.categories{
+.categories {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.categories i{
-    font-size: 2rem ;
+.categories i {
+    font-size: 2rem;
     margin: 0px 8rem;
     margin-top: -20px;
     color: #F2613F;
     padding: 10px;
 }
-.categories i:hover{
+.categories i:hover {
     color: white;
 }
-footer{
+footer {
     width: 100%;
     height: 40vh;
     display: flex;
@@ -149,37 +144,221 @@ footer{
     align-items: center;
     position: relative;
 }
-footer ul{
+footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     left: 15%;
 }
-footer ul li{
+footer ul li {
     list-style: none;
     margin: 0 20px;
 }
-footer ul li a{
+footer ul li a {
     text-decoration: none;
     color: white;
     font-family: "Sixtyfour Convergence", sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
-.socialicons
-{
+.socialicons {
     position: absolute;
     right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.socialicons i{
+.socialicons i {
     font-size: 2rem;
     margin: 0 20px;
     color: #9B3922;
 }
-.socialicons i:hover{
+.socialicons i:hover {
     color: white;
+}
+
+/* Media Queries for Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 90px;
+    }
+
+    ul {
+        margin-right: 0;
+    }
+
+    .list-items {
+        display: inline-block;
+        margin: 5px 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about {
+        width: 90%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .about-img img {
+        padding-left: 0;
+        width: 85%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 10vh;
+    }
+
+    .for-and-about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .categories {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer ul {
+        left: 10%;
+    }
+
+    footer ul li a {
+        font-size: 18px;
+    }
+
+    .socialicons i {
+        font-size: 1.8rem;
+    }
+}
+
+/* Media Queries for Mobile (up to 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 80px;
+    }
+
+    ul {
+        margin-right: 0;
+    }
+
+    .list-items {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #bgimg {
+        height: 50vh;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-img img {
+        padding: 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .image-grid {
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .for-and-about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .categories i {
+        margin: 20px 0;
+    }
+}
+
+/* Media Queries for Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .list-items {
+        font-size: 14px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .about a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .for-and-about h2 {
+        font-size: 1.5rem;
+    }
+
+    footer ul li a {
+        font-size: 16px;
+    }
+
+    .socialicons i {
+        font-size: 1.5rem;
+    }
 }
